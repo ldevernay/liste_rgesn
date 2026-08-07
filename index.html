@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Déclarations RGESN — LauDevSat</title>
+<meta name="description" content="Liste triable et filtrable des déclarations d'écoconception RGESN publiées par des organismes et entreprises.">
+<style>
+  :root{
+    --green-900:#12291f;
+    --green-700:#1f5c3f;
+    --green-600:#2c7a52;
+    --green-100:#e6f2ea;
+    --paper:#fbfaf6;
+    --ink:#1b1d1c;
+    --ink-soft:#4b524e;
+    --line:#d9ddda;
+    --focus:#0b5fff;
+    --radius:.5rem;
+    --maxw:64rem;
+  }
+  *{box-sizing:border-box}
+  html{color-scheme:light}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.45;
+  }
+  a{color:var(--green-700)}
+  a:hover{color:var(--green-900)}
+  img{max-width:100%;display:block}
+  :focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+
+  .skip-link{
+    position:absolute;left:-999px;top:0;background:#fff;color:var(--ink);
+    padding:.6rem 1rem;z-index:100;border-radius:0 0 .4rem 0;
+  }
+  .skip-link:focus{left:0}
+
+  header.site{
+    background:var(--green-900);
+    color:#fff;
+  }
+  .site-header-inner{
+    max-width:var(--maxw);margin:0 auto;padding:.75rem 1rem;
+    display:flex;align-items:center;gap:.75rem;
+  }
+  .brand{
+    display:flex;align-items:center;gap:.6rem;text-decoration:none;color:#fff;
+  }
+  .brand img{height:36px;width:auto}
+  .brand span{font-weight:700;font-size:1.05rem;letter-spacing:.01em}
+  .brand:hover, .brand:focus-visible{color:#fff;opacity:.9}
+
+  main{max-width:var(--maxw);margin:0 auto;padding:1.25rem 1rem 3rem}
+
+  .page-title{
+    margin:1.25rem 0 .25rem;font-size:1.6rem;color:var(--green-900);
+  }
+  .page-lede{margin:0 0 1.5rem;color:var(--ink-soft);max-width:44rem}
+
+  fieldset.filters{
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:1rem 1rem 1.1rem;margin:0 0 1.25rem;background:#fff;
+  }
+  fieldset.filters legend{
+    font-weight:700;padding:0 .4rem;color:var(--green-900);
+  }
+  .filters-grid{
+    display:grid;gap:.9rem 1rem;
+    grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));
+  }
+  .field label{display:block;font-size:.85rem;font-weight:600;margin-bottom:.3rem}
+  .field input[type="search"],
+  .field select{
+    width:100%;padding:.45rem .5rem;border:1px solid #b9beb9;border-radius:.35rem;
+    font-size:.95rem;background:#fff;color:var(--ink);
+  }
+  .field-score output{font-variant-numeric:tabular-nums;font-weight:600}
+  .field input[type="range"]{width:100%}
+
+  .filters-actions{
+    display:flex;align-items:center;gap:1rem;margin-top:.9rem;flex-wrap:wrap;
+  }
+  button.reset{
+    border:1px solid var(--green-700);background:#fff;color:var(--green-700);
+    padding:.45rem .9rem;border-radius:.35rem;font-size:.9rem;cursor:pointer;
+  }
+  button.reset:hover{background:var(--green-100)}
+
+  .results-meta{
+    margin:0 0 1rem;font-size:.9rem;color:var(--ink-soft);
+  }
+
+  ol.results{
+    list-style:none;margin:0;padding:0;
+    display:grid;gap:.9rem;
+    grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));
+  }
+  .card{
+    border:1px solid var(--line);border-radius:var(--radius);
+    background:#fff;padding:1rem 1rem 1.1rem;
+    display:flex;flex-direction:column;gap:.55rem;
+  }
+  .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:.6rem}
+  .card h2{
+    font-size:1.02rem;margin:0;line-height:1.3;color:var(--ink);
+  }
+  .card h2 a{text-decoration:none}
+  .card h2 a:hover{text-decoration:underline}
+
+  .score{
+    flex:0 0 auto;font-weight:700;font-size:.95rem;line-height:1;
+    padding:.35rem .55rem;border-radius:999px;white-space:nowrap;
+    background:var(--green-100);color:var(--green-900);
+    border:1px solid #bfe0cc;
+  }
+  .score[data-band="low"]{background:#fdecec;color:#7a1f1f;border-color:#f2c4c4}
+  .score[data-band="mid"]{background:#fdf3e3;color:#6b4a06;border-color:#f0dba8}
+
+  .card-url{
+    font-size:.85rem;word-break:break-all;color:var(--ink-soft);
+  }
+  .card-url a{color:var(--green-700)}
+
+  ul.tags{list-style:none;margin:.15rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}
+  ul.tags li{
+    font-size:.75rem;border:1px solid var(--line);border-radius:.3rem;
+    padding:.2rem .45rem;color:var(--ink-soft);background:var(--paper);
+  }
+  ul.tags li[data-true]{border-color:#bfe0cc;background:var(--green-100);color:var(--green-900)}
+  ul.tags li[data-false]{border-color:#eccfcf;background:#fdecec;color:#7a1f1f}
+
+  .empty{
+    padding:2rem 1rem;text-align:center;color:var(--ink-soft);
+    border:1px dashed var(--line);border-radius:var(--radius);
+  }
+
+  footer.site{
+    border-top:1px solid var(--line);margin-top:2.5rem;padding:1.25rem 1rem;
+    font-size:.85rem;color:var(--ink-soft);text-align:center;
+  }
+  footer.site a{color:var(--green-700)}
+
+  .sr-only{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+  }
+
+  @media (max-width:26rem){
+    .brand span{font-size:.95rem}
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<header class="site">
+  <div class="site-header-inner">
+    <a class="brand" href="https://www.laudevsat.fr">
+      <img src="https://www.laudevsat.fr/images/logo/logo.svg" alt="" width="120" height="36">
+      <span>LauDevSat</span>
+    </a>
+  </div>
+</header>
+
+<main id="contenu">
+  <h1 class="page-title">Déclarations d'écoconception RGESN</h1>
+  <p class="page-lede">
+    Liste des déclarations d'écoconception publiées par des organismes et entreprises,
+    dans le cadre du RGESN (Référentiel Général d'Écoconception de Services Numériques).
+    Utilisez les filtres pour affiner la liste et les options de tri pour la réorganiser.
+  </p>
+
+  <form id="filter-form">
+    <fieldset class="filters">
+      <legend>Filtrer et trier les déclarations</legend>
+      <div class="filters-grid">
+
+        <div class="field">
+          <label for="f-search">Organisme</label>
+          <input type="search" id="f-search" name="search" placeholder="Rechercher un nom…" autocomplete="off">
+        </div>
+
+        <div class="field">
+          <label for="f-version">Version du référentiel</label>
+          <select id="f-version" name="version">
+            <option value="">Toutes</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="f-justif">Justifications présentes</label>
+          <select id="f-justif" name="justifications">
+            <option value="">Toutes</option>
+            <option value="Oui">Oui</option>
+            <option value="Non">Non</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="f-audit">Audit tiers</label>
+          <select id="f-audit" name="audit">
+            <option value="">Tous</option>
+            <option value="Oui">Oui</option>
+            <option value="Non">Non</option>
+            <option value="Information manquante">Information manquante</option>
+          </select>
+        </div>
+
+        <div class="field field-score">
+          <label for="f-score">Score minimum : <output id="f-score-out" for="f-score">0</output>%</label>
+          <input type="range" id="f-score" name="score" min="0" max="100" step="1" value="0">
+        </div>
+
+        <div class="field">
+          <label for="f-sort">Trier par</label>
+          <select id="f-sort" name="sort">
+            <option value="score-desc">Score (décroissant)</option>
+            <option value="score-asc">Score (croissant)</option>
+            <option value="organisme-asc">Organisme (A → Z)</option>
+            <option value="organisme-desc">Organisme (Z → A)</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="filters-actions">
+        <button type="reset" class="reset" id="reset-btn">Réinitialiser les filtres</button>
+      </div>
+    </fieldset>
+  </form>
+
+  <p class="results-meta" id="results-meta" role="status" aria-live="polite">Chargement des déclarations…</p>
+
+  <ol class="results" id="results" aria-label="Liste des déclarations RGESN"></ol>
+</main>
+
+<footer class="site">
+  <p>
+    Données issues du recensement des déclarations RGESN —
+    <a href="https://www.laudevsat.fr">laudevsat.fr</a>
+  </p>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  var state = {data: []};
+  var els = {
+    search: document.getElementById("f-search"),
+    version: document.getElementById("f-version"),
+    justif: document.getElementById("f-justif"),
+    audit: document.getElementById("f-audit"),
+    score: document.getElementById("f-score"),
+    scoreOut: document.getElementById("f-score-out"),
+    sort: document.getElementById("f-sort"),
+    results: document.getElementById("results"),
+    meta: document.getElementById("results-meta"),
+    form: document.getElementById("filter-form"),
+    resetBtn: document.getElementById("reset-btn")
+  };
+
+  function scoreBand(score){
+    if (score === null || score === undefined) return "";
+    if (score < 50) return "low";
+    if (score < 75) return "mid";
+    return "";
+  }
+
+  function esc(str){
+    var d = document.createElement("div");
+    d.textContent = str == null ? "" : String(str);
+    return d.innerHTML;
+  }
+
+  function render(){
+    var q = els.search.value.trim().toLowerCase();
+    var version = els.version.value;
+    var justif = els.justif.value;
+    var audit = els.audit.value;
+    var minScore = Number(els.score.value);
+    var sort = els.sort.value;
+
+    var list = state.data.filter(function(d){
+      if (q && d.organisme.toLowerCase().indexOf(q) === -1) return false;
+      if (version && d.version !== version) return false;
+      if (justif && d.justifications !== justif) return false;
+      if (audit && d.audit !== audit) return false;
+      if (d.score !== null && d.score < minScore) return false;
+      if (d.score === null && minScore > 0) return false;
+      return true;
+    });
+
+    list.sort(function(a, b){
+      switch(sort){
+        case "score-asc":
+          return (a.score === null ? -1 : a.score) - (b.score === null ? -1 : b.score);
+        case "organisme-asc":
+          return a.organisme.localeCompare(b.organisme, "fr");
+        case "organisme-desc":
+          return b.organisme.localeCompare(a.organisme, "fr");
+        case "score-desc":
+        default:
+          return (b.score === null ? -1 : b.score) - (a.score === null ? -1 : a.score);
+      }
+    });
+
+    els.meta.textContent = list.length + " déclaration" + (list.length !== 1 ? "s" : "") +
+      " affichée" + (list.length !== 1 ? "s" : "") + " sur " + state.data.length + ".";
+
+    if (list.length === 0){
+      els.results.innerHTML = "";
+      var li = document.createElement("li");
+      li.className = "empty";
+      li.textContent = "Aucune déclaration ne correspond à ces filtres.";
+      els.results.appendChild(li);
+      return;
+    }
+
+    var html = list.map(function(d){
+      var scoreText = d.score === null ? "N/A" : (d.score % 1 === 0 ? d.score.toFixed(0) : d.score.toFixed(1)) + "%";
+      var band = scoreBand(d.score);
+      return (
+        '<li class="card">' +
+          '<div class="card-top">' +
+            '<h2><a href="' + esc(d.url) + '" target="_blank" rel="noopener">' + esc(d.organisme) + '</a></h2>' +
+            '<span class="score"' + (band ? ' data-band="' + band + '"' : '') + '>' +
+              '<span class="sr-only">Score obtenu : </span>' + esc(scoreText) +
+            '</span>' +
+          '</div>' +
+          '<p class="card-url"><a href="' + esc(d.url) + '" target="_blank" rel="noopener">' + esc(d.url) + '</a></p>' +
+          '<ul class="tags">' +
+            '<li>Référentiel ' + esc(d.version) + '</li>' +
+            '<li' + (d.justifications === "Oui" ? ' data-true' : ' data-false') + '>Justifications : ' + esc(d.justifications) + '</li>' +
+            '<li' + (d.audit === "Oui" ? ' data-true' : (d.audit === "Non" ? ' data-false' : '')) + '>Audit tiers : ' + esc(d.audit) + '</li>' +
+          '</ul>' +
+        '</li>'
+      );
+    }).join("");
+
+    els.results.innerHTML = html;
+  }
+
+  function populateVersionOptions(){
+    var versions = Array.from(new Set(state.data.map(function(d){ return d.version; })))
+      .filter(Boolean)
+      .sort();
+    versions.forEach(function(v){
+      var opt = document.createElement("option");
+      opt.value = v;
+      opt.textContent = v;
+      els.version.appendChild(opt);
+    });
+  }
+
+  ["input", "change"].forEach(function(evt){
+    els.search.addEventListener(evt, render);
+    els.version.addEventListener(evt, render);
+    els.justif.addEventListener(evt, render);
+    els.audit.addEventListener(evt, render);
+    els.sort.addEventListener(evt, render);
+  });
+  els.score.addEventListener("input", function(){
+    els.scoreOut.textContent = els.score.value;
+    render();
+  });
+
+  els.form.addEventListener("reset", function(){
+    window.setTimeout(function(){
+      els.scoreOut.textContent = "0";
+      render();
+    }, 0);
+  });
+
+  fetch("declarations.json")
+    .then(function(r){
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    })
+    .then(function(data){
+      state.data = data;
+      populateVersionOptions();
+      render();
+    })
+    .catch(function(err){
+      els.meta.textContent = "Impossible de charger les données (declarations.json).";
+      console.error(err);
+    });
+})();
+</script>
+</body>
+</html>

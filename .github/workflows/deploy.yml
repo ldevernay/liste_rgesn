@@ -15,15 +15,30 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      # Important: fetch-depth: 0 si vous avez besoin de l'historique, sinon par défaut c'est 1
+      
+       - name: Configurer la clé SSH et déployer via rsync
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        VPS_USER: ${{ secrets.SSH_VPS_USER }}
+        VPS_HOST: ${{ secrets.SSH_VPS_IP }}
+        VPS_PORT: ${{ secrets.SSH_VPS_PORT }}
+        VPS_PATH: /var/www/liste-rgesn/
+      run: |
+        # 1. Créer le dossier SSH et écrire la clé privée
+        mkdir -p ~/.ssh
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
 
-    - name: Déployer les fichiers sur le VPS via rsync
-      uses: webfactory/rsync-deploy@v0.8.0
-      with:
-        deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        remote_host: ${{ secrets.SSH_VPS_IP }}
-        remote_user: ${{ secrets.SSH_VPS_USER }}
-        remote_port: ${{ secrets.SSH_VPS_PORT }}
-        remote_path: /var/www/liste-rgesn/
-        local_path: ./
-        rsync_args: -avz --delete
+        # 2. Ajouter l'hôte connu pour éviter la demande de confirmation interactive
+        # On utilise -p pour le port personnalisé
+        ssh-keyscan -H -p "$VPS_PORT" "$VPS_HOST" >> ~/.ssh/known_hosts
+
+        # 3. Lancer rsync avec suppression (--delete)
+        # -a: archive mode (conserve les permissions, dates, etc.)
+        # -v: verbose
+        # -z: compress
+        # --delete: supprime les fichiers sur le VPS qui n'existent plus localement
+        rsync -avz --delete \
+          -e "ssh -p $VPS_PORT -o StrictHostKeyChecking=no" \
+          ./ \
+          "$VPS_USER@$VPS_HOST:$VPS_PATH"

@@ -13,18 +13,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v5
-
-    - name: Copy files to VPS
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        USER: ${{ secrets.SSH_VPS_USER }}
-        IPV4: ${{ secrets.SSH_VPS_IP }}
-      run: |
-          mkdir -p ~/.ssh
-          chmod 700 ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 700 ~/.ssh/id_vps_ovh-ed25519
-          ssh-keyscan -H "$IPV4" >> ~/.ssh/known_hosts
-          rsync -avz -e 'ssh -p 53180' --delete ./ "$USER"@"$IPV4":/var/www/liste-rgesn/
+    - name: Déployer sur le VPS via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          IP: ${{ secrets.SSH_VPS_IP }}
+          USER: ${{ secrets.SSH_VPS_USER }}
+          KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          PORT: ${{ secrets.SSH_VPS_PORT }}
+          script: |
+            cd /var/www/liste-rgesn
+            git pull origin main
+            # npm ci --production
+            # pm2 restart monapp

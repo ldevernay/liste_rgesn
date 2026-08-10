@@ -21,11 +21,10 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         USER: ${{ secrets.SSH_VPS_USER }}
         IPV4: ${{ secrets.SSH_VPS_IP }}
-        PORT: ${{ secrets.SSH_VPS_PORT }}
       run: |
         # mkdir -p ~/.ssh
         # chmod 700 ~/.ssh
         # echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
         # chmod 700 ~/.ssh/id_rsa
         # ssh-keyscan -H "$IPV4" >> ~/.ssh/known_hosts
-        rsync -avz -e 'ssh -p "$PORT"' --delete ./ "$USER"@"$IPV4":/var/www/liste-rgesn/
+        rsync -avz -e 'ssh -p 53180' --delete ./ "$USER"@"$IPV4":/var/www/liste-rgesn/

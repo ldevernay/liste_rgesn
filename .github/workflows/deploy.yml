@@ -13,15 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Déployer sur le VPS via SSH
-      uses: appleboy/ssh-action@v1
+    - name: Checkout code
+      uses: actions/checkout@v4
+      # Important: fetch-depth: 0 si vous avez besoin de l'historique, sinon par défaut c'est 1
+
+    - name: Déployer les fichiers sur le VPS via rsync
+      uses: burnett01/rsync-deployments@7.0
       with:
-        host: ${{ secrets.SSH_VPS_IP }}
-        username: ${{ secrets.SSH_VPS_USER }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: ${{ secrets.SSH_VPS_PORT }}
-        script: |
-          cd /var/www/liste-rgesn
-          git pull origin main
-          # npm ci --production
-          # pm2 restart monapp
+        switches: -avz --delete
+        path: ./
+        remote_path: /var/www/liste-rgesn/
+        remote_host: ${{ secrets.SSH_VPS_IP }}
+        remote_user: ${{ secrets.SSH_VPS_USER }}
+        remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        remote_port: ${{ secrets.SSH_VPS_PORT }}

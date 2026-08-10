@@ -16,7 +16,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
-       - name: Configurer la clé SSH et déployer via rsync
+    - name: Configurer la clé SSH et déployer via rsync
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         VPS_USER: ${{ secrets.SSH_VPS_USER }}

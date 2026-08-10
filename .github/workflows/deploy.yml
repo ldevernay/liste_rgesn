@@ -18,12 +18,12 @@ jobs:
       # Important: fetch-depth: 0 si vous avez besoin de l'historique, sinon par défaut c'est 1
 
     - name: Déployer les fichiers sur le VPS via rsync
-      uses: burnett01/rsync-deployments@7.0
+      uses: webfactory/rsync-deploy@v0.8.0
       with:
-        switches: -avz --delete
-        path: ./
-        remote_path: /var/www/liste-rgesn/
+        deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
         remote_host: ${{ secrets.SSH_VPS_IP }}
         remote_user: ${{ secrets.SSH_VPS_USER }}
-        remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
         remote_port: ${{ secrets.SSH_VPS_PORT }}
+        remote_path: /var/www/liste-rgesn/
+        local_path: ./
+        rsync_args: -avz --delete

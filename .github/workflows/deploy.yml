@@ -14,14 +14,14 @@ jobs:
 
     steps:
     - name: Déployer sur le VPS via SSH
-        uses: appleboy/ssh-action@v1
-        with:
-          IP: ${{ secrets.SSH_VPS_IP }}
-          USER: ${{ secrets.SSH_VPS_USER }}
-          KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          PORT: ${{ secrets.SSH_VPS_PORT }}
-          script: |
-            cd /var/www/liste-rgesn
-            git pull origin main
-            # npm ci --production
-            # pm2 restart monapp
+      uses: appleboy/ssh-action@v1
+      with:
+        IP: ${{ secrets.SSH_VPS_IP }}
+        USER: ${{ secrets.SSH_VPS_USER }}
+        KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        PORT: ${{ secrets.SSH_VPS_PORT }}
+        script: |
+          cd /var/www/liste-rgesn
+          git pull origin main
+          # npm ci --production
+          # pm2 restart monapp

@@ -25,6 +25,13 @@
     return "";
   }
 
+  function parseFrDate(str){
+    if (!str) return null;
+    var m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(str.trim());
+    if (!m) return null;
+    return new Date(Number(m[3]), Number(m[2]) - 1, Number(m[1])).getTime();
+  }
+
   function esc(str){
     var d = document.createElement("div");
     d.textContent = str == null ? "" : String(str);
@@ -57,6 +64,10 @@
           return a.organisme.localeCompare(b.organisme, "fr");
         case "organisme-desc":
           return b.organisme.localeCompare(a.organisme, "fr");
+        case "maj-desc":
+          return (parseFrDate(b.derniere_maj) || 0) - (parseFrDate(a.derniere_maj) || 0);
+        case "maj-asc":
+          return (parseFrDate(a.derniere_maj) || 0) - (parseFrDate(b.derniere_maj) || 0);
         case "score-desc":
         default:
           return (b.score === null ? -1 : b.score) - (a.score === null ? -1 : a.score);
@@ -101,6 +112,7 @@
             '<li>Référentiel ' + esc(d.version) + '</li>' +
             '<li' + (d.justifications === "Oui" ? ' data-true' : ' data-false') + '>Justifications : ' + esc(d.justifications) + '</li>' +
             '<li' + (d.audit === "Oui" ? ' data-true' : (d.audit === "Non" ? ' data-false' : '')) + '>Audit tiers : ' + esc(d.audit) + '</li>' +
+            '<li>Mis à jour : ' + esc(d.derniere_maj || "N/A") + '</li>' +
           '</ul>' +
         '</li>'
       );
@@ -218,7 +230,7 @@
     }, 0);
   });
 
-  fetch("declarations.json")
+  fetch(new URL("asset:./declarations.json", import.meta.url))
     .then(function(r){
       if (!r.ok) throw new Error("HTTP " + r.status);
       return r.json();
@@ -235,9 +247,10 @@
 
   if ("serviceWorker" in navigator){
     window.addEventListener("load", function(){
-      navigator.serviceWorker.register("sw.js").catch(function(err){
-        console.error("Échec de l'enregistrement du service worker :", err);
-      });
+      navigator.serviceWorker.register(new URL("./sw.js", import.meta.url))
+        .catch(function(err){
+          console.error("Échec de l'enregistrement du service worker :", err);
+        });
     });
   }
 })();

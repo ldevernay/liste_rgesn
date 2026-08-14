@@ -7,23 +7,10 @@
 <meta name="description" content="Liste triable et filtrable des déclarations d'écoconception RGESN publiées par des organismes et entreprises.">
 <meta name="theme-color" content="#12291f">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="icons/favicon.ico" sizes="48x48">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css">
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//matomo.laudevsat.fr/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '2']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -93,6 +80,8 @@
             <option value="score-asc">Score (croissant)</option>
             <option value="organisme-asc">Organisme (A → Z)</option>
             <option value="organisme-desc">Organisme (Z → A)</option>
+            <option value="maj-desc">Dernière mise à jour (récente → ancienne)</option>
+            <option value="maj-asc">Dernière mise à jour (ancienne → récente)</option>
           </select>
         </div>
 
@@ -122,6 +111,6 @@
   </p>
 </footer>
 
-<script src="app.js"></script>
+<script type="module" src="app.js"></script>
 </body>
 </html>

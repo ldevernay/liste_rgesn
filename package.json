@@ -1,0 +1,19 @@
+{
+  "name": "liste-rgesn",
+  "version": "1.0.0",
+  "description": "Liste triable, filtrable et paginee des declarations d'ecoconception RGESN",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir dist --public-url ./"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.16.4",
+    "@parcel/transformer-webmanifest": "^2.16.4",
+    "parcel": "^2.12.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}

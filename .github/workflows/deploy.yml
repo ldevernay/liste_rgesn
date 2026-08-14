@@ -15,6 +15,21 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+    - run: node --version
+
+    - name: Cache node modules
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-npm-
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build
+      run: npm run build 
       
     - name: Configurer la clé SSH et déployer via rsync
       env:

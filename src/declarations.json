@@ -555,7 +555,7 @@
   "justifications": "Oui",
   "audit": "Oui",
   "score": 80.0,
-  "derniere_maj": "12/02/2126"
+  "derniere_maj": "12/02/2026"
  },
  {
   "url": "https://www.whodunit.fr/wp-content/uploads/2025/03/declaration-rgesn-whodunit-17-mars-2025-min-1.pdf",
@@ -772,5 +772,14 @@
   "audit": "Oui",
   "score": 40.0,
   "derniere_maj": "?"
+ },
+ {
+  "url": "https://www.laudevsat.fr/declaration-environnementale/",
+  "organisme": "Site de LauDevSat",
+  "version": "V1 2024",
+  "justifications": "Oui",
+  "audit": "Non",
+  "score": 80.5,
+  "derniere_maj": "20/08/2026"
  }
 ]

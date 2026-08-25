@@ -1,7 +1,7 @@
 (function(){
   "use strict";
 
-  var PAGE_SIZE = 10;
+  var PAGE_SIZE = 9;
 
   var state = {data: [], filtered: [], page: 1};
   var els = {

@@ -781,5 +781,14 @@
   "audit": "Non",
   "score": 80.5,
   "derniere_maj": "20/08/2026"
+ },
+ {
+  "url": "https://www.imsa.fr/ecoconception-conformite-rgesn/",
+  "organisme": "iMSA - informatique de la MSA et de ses partenaires",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Non",
+  "score": 68,
+  "derniere_maj": "11/07/2024"
  }
 ]

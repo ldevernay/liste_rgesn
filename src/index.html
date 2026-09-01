@@ -1,131 +1,161 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Liste des déclarations RGESN — LauDevSat</title>
-<meta name="description" content="Liste triable et filtrable des déclarations d'écoconception RGESN publiées par des organismes et entreprises.">
-<meta name="theme-color" content="#12291f">
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon.ico" sizes="48x48">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css">
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//matomo.laudevsat.fr/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '2']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liste des déclarations RGESN — LauDevSat</title>
+  <meta name="description"
+    content="Liste triable et filtrable des déclarations d'écoconception RGESN publiées par des organismes et entreprises.">
+  <meta name="theme-color" content="#12291f">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "//matomo.laudevsat.fr/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '2']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
 </head>
+
 <body>
-<a class="skip-link" href="#contenu">Aller au contenu</a>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-<header class="site">
-  <div class="site-header-inner">
-    <a class="brand" href="https://www.laudevsat.fr">
-      <img src="https://www.laudevsat.fr/images/logo/logo.svg" alt="" width="120" height="36">
-      <span>Liste des déclarations RGESN</span>
-    </a>
-  </div>
-</header>
+  <header class="site">
+    <div class="site-header-inner">
+      <a class="brand" href="https://www.laudevsat.fr">
+        <img src="https://www.laudevsat.fr/images/logo/logo.svg" alt="" width="120" height="36">
+        <span>Liste des déclarations RGESN</span>
+      </a>
+    </div>
+  </header>
 
-<main id="contenu">
-  <h1 class="page-title">Déclarations d'écoconception RGESN</h1>
-  <p class="page-lede">
-    Liste des déclarations d'écoconception publiées par des organismes et entreprises,
-    dans le cadre du RGESN (Référentiel Général d'Écoconception de Services Numériques).
-    Utilisez les filtres pour affiner la liste et les options de tri pour la réorganiser.
-  </p>
+  <main id="contenu">
+    <h1 class="page-title">Déclarations d'écoconception RGESN</h1>
+    <p class="page-lede">
+      Liste des déclarations d'écoconception publiées par des organismes et entreprises,
+      dans le cadre du <a
+        href="https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/"
+        target="_blank">RGESN (Référentiel Général d'Écoconception de Services Numériques)</a>.
+    </p>
 
-  <form id="filter-form">
-    <fieldset class="filters">
-      <legend>Filtrer et trier les déclarations</legend>
-      <div class="filters-grid">
 
-        <div class="field">
-          <label for="f-search">Organisme</label>
-          <input type="search" id="f-search" name="search" placeholder="Rechercher un nom…" autocomplete="off">
+    <p>Vous pouvez ici :
+    <ul>
+      <li>Rechercher directement le nom de l'organisme ayant publié la déclaration RGESN.</li>
+      <li>Filtrer en fonction de :
+        <ul>
+          <li>La version du référentiel utilisée (V1 de 2021 par la DINUM ou V2 de
+            2024 par l'ARCEP)</li>
+          <li>La présence ou non de l'ensemble des justifications
+            attendues
+          <li>La réalisation ou revue de l'audit par un tiers.</li>
+        </ul>
+      <li>Trier la liste par score, organisme ou date de dernière mise à jour.</li>
+      <li>Spécifier un score d'avancement minimal.</li>
+    </ul>
+    </p>
+    <p>Si vous souhaitez y ajouter une déclaration RGESN, vous pouvez désormais le faire directement via <a
+        href="https://github.com/ldevernay/liste_rgesn" target="_blank">dépôt github</a>. Les détails sont dans <a
+        href="https://github.com/ldevernay/liste_rgesn/blob/main/contributing.md" target="_blank">fichier
+        contributing.md</a>.
+      Et si ce n'est pas possible pour vous de procéder ainsi, vous pouvez directement me contacter par mail ou via <a
+        href="https://www.linkedin.com/in/laurent-devernay-satyagraha/" target="_blank"> mon profil LinkedIn</a>.
+    </p>
+
+
+    <form id="filter-form">
+      <fieldset class="filters">
+        <legend>Filtrer et trier les déclarations</legend>
+        <div class="filters-grid">
+
+          <div class="field">
+            <label for="f-search">Organisme</label>
+            <input type="search" id="f-search" name="search" placeholder="Rechercher un nom…" autocomplete="off">
+          </div>
+
+          <div class="field">
+            <label for="f-version">Version du référentiel</label>
+            <select id="f-version" name="version">
+              <option value="">Toutes</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="f-justif">Justifications présentes</label>
+            <select id="f-justif" name="justifications">
+              <option value="">Toutes</option>
+              <option value="Oui">Oui</option>
+              <option value="Non">Non</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="f-audit">Audit tiers</label>
+            <select id="f-audit" name="audit">
+              <option value="">Tous</option>
+              <option value="Oui">Oui</option>
+              <option value="Non">Non</option>
+              <option value="Information manquante">Information manquante</option>
+            </select>
+          </div>
+
+          <div class="field field-score">
+            <label for="f-score">Score minimum : <output id="f-score-out" for="f-score">0</output>%</label>
+            <input type="range" id="f-score" name="score" min="0" max="100" step="1" value="0">
+          </div>
+
+          <div class="field">
+            <label for="f-sort">Trier par</label>
+            <select id="f-sort" name="sort">
+              <option value="score-desc">Score (décroissant)</option>
+              <option value="score-asc">Score (croissant)</option>
+              <option value="organisme-asc">Organisme (A → Z)</option>
+              <option value="organisme-desc">Organisme (Z → A)</option>
+              <option value="maj-desc">Dernière mise à jour (récente → ancienne)</option>
+              <option value="maj-asc">Dernière mise à jour (ancienne → récente)</option>
+            </select>
+          </div>
+
         </div>
 
-        <div class="field">
-          <label for="f-version">Version du référentiel</label>
-          <select id="f-version" name="version">
-            <option value="">Toutes</option>
-          </select>
+        <div class="filters-actions">
+          <button type="reset" class="reset" id="reset-btn">Réinitialiser les filtres</button>
         </div>
+      </fieldset>
+    </form>
 
-        <div class="field">
-          <label for="f-justif">Justifications présentes</label>
-          <select id="f-justif" name="justifications">
-            <option value="">Toutes</option>
-            <option value="Oui">Oui</option>
-            <option value="Non">Non</option>
-          </select>
-        </div>
+    <p class="results-meta" id="results-meta" role="status" aria-live="polite">Chargement des déclarations…</p>
 
-        <div class="field">
-          <label for="f-audit">Audit tiers</label>
-          <select id="f-audit" name="audit">
-            <option value="">Tous</option>
-            <option value="Oui">Oui</option>
-            <option value="Non">Non</option>
-            <option value="Information manquante">Information manquante</option>
-          </select>
-        </div>
+    <ol class="results" id="results" aria-label="Liste des déclarations RGESN"></ol>
 
-        <div class="field field-score">
-          <label for="f-score">Score minimum : <output id="f-score-out" for="f-score">0</output>%</label>
-          <input type="range" id="f-score" name="score" min="0" max="100" step="1" value="0">
-        </div>
+    <nav class="pagination" id="pagination" aria-label="Pagination des résultats"></nav>
+  </main>
 
-        <div class="field">
-          <label for="f-sort">Trier par</label>
-          <select id="f-sort" name="sort">
-            <option value="score-desc">Score (décroissant)</option>
-            <option value="score-asc">Score (croissant)</option>
-            <option value="organisme-asc">Organisme (A → Z)</option>
-            <option value="organisme-desc">Organisme (Z → A)</option>
-            <option value="maj-desc">Dernière mise à jour (récente → ancienne)</option>
-            <option value="maj-asc">Dernière mise à jour (ancienne → récente)</option>
-          </select>
-        </div>
+  <footer class="site">
+    <p>
+      Données issues du recensement des déclarations RGESN —
+      <a href="https://www.laudevsat.fr">laudevsat.fr</a>
+    </p>
+    <p>
+      Code sous licence <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License v3.0</a> —
+      dépôt source sur <a href="https://github.com/ldevernay/liste_rgesn">GitHub</a>
+    </p>
+  </footer>
 
-      </div>
-
-      <div class="filters-actions">
-        <button type="reset" class="reset" id="reset-btn">Réinitialiser les filtres</button>
-      </div>
-    </fieldset>
-  </form>
-
-  <p class="results-meta" id="results-meta" role="status" aria-live="polite">Chargement des déclarations…</p>
-
-  <ol class="results" id="results" aria-label="Liste des déclarations RGESN"></ol>
-
-  <nav class="pagination" id="pagination" aria-label="Pagination des résultats"></nav>
-</main>
-
-<footer class="site">
-  <p>
-    Données issues du recensement des déclarations RGESN —
-    <a href="https://www.laudevsat.fr">laudevsat.fr</a>
-  </p>
-  <p>
-    Code sous licence <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License v3.0</a> —
-    dépôt source sur <a href="https://github.com/ldevernay/liste_rgesn">GitHub</a>
-  </p>
-</footer>
-
-<script type="module" src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
+
 </html>

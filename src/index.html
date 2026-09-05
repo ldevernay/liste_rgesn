@@ -103,13 +103,8 @@
           </div>
 
           <div class="field">
-            <label for="f-audit">Audit tiers</label>
-            <select id="f-audit" name="audit">
-              <option value="">Tous</option>
-              <option value="Oui">Oui</option>
-              <option value="Non">Non</option>
-              <option value="Information manquante">Information manquante</option>
-            </select>
+            <label for="f-audit">Auditeur</label>
+            <input type="search" id="f-audit" name="audit" placeholder="Rechercher un auditeur..." autocomplete="off">
           </div>
 
           <div class="field field-score">
@@ -137,7 +132,7 @@
       </fieldset>
     </form>
 
-    <p class="results-meta" id="results-meta" role="status" aria-live="polite">Chargement des déclarations…</p>
+    <output class="results-meta" id="results-meta" aria-live="polite">Chargement des déclarations…</output>
 
     <ol class="results" id="results" aria-label="Liste des déclarations RGESN"></ol>
 

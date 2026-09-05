@@ -42,7 +42,7 @@
     var q = els.search.value.trim().toLowerCase();
     var version = els.version.value;
     var justif = els.justif.value;
-    var audit = els.audit.value;
+    var au = els.audit.value.trim().toLowerCase();
     var minScore = Number(els.score.value);
     var sort = els.sort.value;
 
@@ -50,7 +50,7 @@
       if (q && d.organisme.toLowerCase().indexOf(q) === -1) return false;
       if (version && d.version !== version) return false;
       if (justif && d.justifications !== justif) return false;
-      if (audit && d.audit !== audit) return false;
+      if (au && d.audit.toLowerCase().indexOf(au) === -1) return false;
       if (d.score !== null && d.score < minScore) return false;
       if (d.score === null && minScore > 0) return false;
       return true;

@@ -1302,5 +1302,14 @@
   "audit": "inovagora",
   "score": 90,
   "derniere_maj": "17/11/2025"
+ },
+ {
+  "url": "https://sovrium.com/fr/docs/rgesn-parity",
+  "organisme": "Sovrium est un moteur d'application configurable et souverain.",
+  "version": "V1 2024",
+  "justifications": "Oui",
+  "audit": "Autoévaluation",
+  "score": null,
+  "derniere_maj": "13/08/2026"
  }
 ]

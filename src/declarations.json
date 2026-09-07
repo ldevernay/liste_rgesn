@@ -834,5 +834,473 @@
   "audit": "inovagora",
   "score": 100,
   "derniere_maj": null
+ },
+ {
+  "url": "https://www.mene.fr/systeme/declaration-ecoconception/",
+  "organisme": "Commune Le Mené",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "13/08/2025"
+ },
+ {
+  "url": "https://www.ccpif.fr/systeme/declaration-ecoconception/",
+  "organisme": "Communauté de Communes Les Portes de l'Île-de-France",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": null
+ },
+ {
+  "url": "https://www.elven.bzh/systeme/declaration-ecoconception/",
+  "organisme": "Commune d'Elven",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "05/08/2025"
+ },
+ {
+  "url": "https://musique.poher.bzh/systeme/declaration-ecoconception/",
+  "organisme": "École de musique du Poher",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "10/06/2026"
+ },
+ {
+  "url": "https://plijadour.poher.bzh/systeme/declaration-ecoconception/",
+  "organisme": "Espace aqualudique du Poher",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "08/06/2026"
+ },
+ {
+  "url": "https://www.saint-amant-de-boixe.fr/systeme/declaration-ecoconception/",
+  "organisme": "Commune de Saint-Amant-de-Boixe",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "20/02/2026"
+ },
+ {
+  "url": "https://www.abbayesaintamantdeboixe.fr/systeme/declaration-ecoconception/",
+  "organisme": "Abbaye de Saint-Amant-de-Boixe",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "30/03/2025"
+ },
+ {
+  "url": "https://www.domloup.fr/systeme/declaration-ecoconception/",
+  "organisme": "Commune de Domloup",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "09/01/2026"
+ },
+ {
+  "url": "https://www.chu-hugo.fr/systeme/declaration-ecoconception/",
+  "organisme": "HUGO (Hôpitaux Universitaires Grand Ouest",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "26/02/2026"
+ },
+ {
+  "url": "https://www.pays-chataigneraie.fr/systeme/declaration-ecoconception/",
+  "organisme": "Communauté de communes Pays de la Châtaigneraie",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "21/01/2026"
+ },
+ {
+  "url": "https://www.azaylebrule.fr/systeme/declaration-ecoconception/",
+  "organisme": "Communauté de communes Pays de la Châtaigneraie",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "01/06/2026"
+ },
+ {
+  "url": "https://www.cc-beauceloiretaine.fr/systeme/declaration-ecoconception/",
+  "organisme": "Communauté de communes Beauce Loirétaine",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": null
+ },
+ {
+  "url": "https://www.les-epesses.com/systeme/declaration-ecoconception/",
+  "organisme": "Commune Les Epesses",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "06/08/2025"
+ },
+ {
+  "url": "https://www.pire-chance.bzh/systeme/declaration-ecoconception/",
+  "organisme": "Commune Piré-Chancé",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "05/12/2025"
+ },
+ {
+  "url": "https://www.gaillard.fr/systeme/declaration-ecoconception/",
+  "organisme": "Commune Piré-Chancé",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "28/01/2026"
+ },
+ {
+  "url": "https://www.crrl.fr/systeme/declaration-ecoconception/",
+  "organisme": "Centre Régional Résistance & Liberté",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "16/12/2025"
+ },
+ {
+  "url": "https://www.normandiesudeure.fr/systeme/declaration-ecoconception/",
+  "organisme": "Interco Normandie Sud Eure",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "10/02/2026"
+ },
+ {
+  "url": "https://www.givrand.fr/systeme/declaration-ecoconception/",
+  "organisme": "Commune de Givrand",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "22/01/2025"
+ },
+ {
+  "url": "https://www.beaurepaire85.fr/systeme/declaration-ecoconception/",
+  "organisme": "Commune de Beaurepaire",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "16/07/2025"
+ },
+ {
+  "url": "https://www.sud-nivernais.fr/systeme/declaration-ecoconception/",
+  "organisme": "Commune de Beaurepaire",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "05/05/2025"
+ },
+ {
+  "url": "https://www.saintmarslareorthe.fr/systeme/declaration-ecoconception/",
+  "organisme": "Commune de Saint-Mars la Réorthe",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "23/12/2025"
+ },
+ {
+  "url": "https://www.deville-les-rouen.fr/systeme/declaration-ecoconception/",
+  "organisme": "Commune de Déville Lès Rouen",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "26/11/2024"
+ },
+ {
+  "url": "https://www.caploire.fr/systeme/declaration-ecoconception/",
+  "organisme": "Cap Loire",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "28/08/2025"
+ },
+ {
+  "url": "https://www.marseillan-tourisme.com/systeme/declaration-ecoconception/",
+  "organisme": "Office de Tourisme de Marseillan",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "11/03/2026"
+ },
+ {
+  "url": "https://www.pluvigner.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairie de Pluvigner",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "17/06/2025"
+ },
+ {
+  "url": "https://www.laclusaz.org/systeme/declaration-ecoconception/",
+  "organisme": "Mairie de La Clusaz",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "27/05/2025"
+ },
+ {
+  "url": "https://www.aizenay.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairie d'Aizenay",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "26/05/2025"
+ },
+ {
+  "url": "https://www.chaumesenretz.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairie de Chaumes-en-Retz",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "11/06/2025"
+ },
+ {
+  "url": "https://www.sainthilairederiez.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairie de Saint-Hilaire-de-Riez",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "26/02/2025"
+ },
+ {
+  "url": "https://www.mairie-orly.fr/systeme/declaration-ecoconception/",
+  "organisme": "Ville d'Orly",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "10/09/2024"
+ },
+ {
+  "url": "https://www.binic-etables-sur-mer.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairies de Binic et Étables-sur-Mer",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "14/01/2025"
+ },
+ {
+  "url": "https://www.ternay.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairie de Ternay",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "19/09/2024"
+ },
+ {
+  "url": "https://www.bignan.bzh/systeme/declaration-ecoconception/",
+  "organisme": "Mairie de Bignan",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "10/09/2024"
+ },
+ {
+  "url": "https://www.syndicat-rivieres-meaux.fr/systeme/declaration-ecoconception/",
+  "organisme": "Syndicat Mixte Marne et Rus du Pays de Meaux",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "30/01/2025"
+ },
+ {
+  "url": "https://www.ml-sillon.org/systeme/declaration-ecoconception/",
+  "organisme": "Mission Locale Rurale du Sillon",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "04/02/2025"
+ },
+ {
+  "url": "https://www.ville-corenc.fr/systeme/declaration-ecoconception/",
+  "organisme": "Ville de Corenc",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "05/03/2025"
+ },
+ {
+  "url": "https://www.ville-cesson-sevigne.fr/systeme/declaration-ecoconception/",
+  "organisme": "Ville de Cesson-Sévigné",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "28/02/2025"
+ },
+ {
+  "url": "https://www.chanteloupenbrie.fr/systeme/declaration-ecoconception/",
+  "organisme": "Ville de Chanteloup-en-Brie",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "05/11/2024"
+ },
+ {
+  "url": "https://www.chemille-en-anjou.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairie de Chemillé-en-Anjou",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "23/04/2024"
+ },
+ {
+  "url": "https://www.mairie-saintjouan.fr/systeme/declaration-ecoconception/",
+  "organisme": "Ville de Saint-Jouan Des Guérets",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "04/12/2024"
+ },
+ {
+  "url": "https://www.ville-dinard.fr/systeme/declaration-ecoconception/",
+  "organisme": "Ville de Dinard",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "07/02/2025"
+ },
+ {
+  "url": "https://www.bleu-pluriel.com/systeme/declaration-ecoconception/",
+  "organisme": "Ville de Trégueux",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "17/06/2025"
+ },
+ {
+  "url": "https://www.plelo.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairie de Plélo",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "05/06/2025"
+ },
+ {
+  "url": "https://www.mairielebignon.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairie du Bignon",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "14/10/2024"
+ },
+ {
+  "url": "https://www.pays-landerneau-daoulas.fr/systeme/declaration-decoconception/",
+  "organisme": "Communauté d'agglomération du Pays de Landerneau-Daoulas",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "05/08/2024"
+ },
+ {
+  "url": "https://www.ville-avrille.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairie d’Avrillé",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "16/05/2025"
+ },
+ {
+  "url": "https://www.ville-bressuire.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairie de Bressuire",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "05/02/2025"
+ },
+ {
+  "url": "https://www.divattesurloire.fr/systeme/declaration-ecoconception/",
+  "organisme": "Ville de Divatte-sur-Loire",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "14/02/2025"
+ },
+ {
+  "url": "https://www.mairie-cintegabelle.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairie de Cintegabelle",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "16/01/2025"
+ },
+ {
+  "url": "https://www.jaunay-marigny.fr/systeme/declaration-ecoconception/",
+  "organisme": "Mairie de Jaunay-Marigny",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "04/04/2025"
+ },
+ {
+  "url": "https://www.sic-candeen.fr/systeme/declaration-ecoconception/",
+  "organisme": "Syndicat Intercommunal du Candéen",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "17/11/2025"
+ },
+ {
+  "url": "https://www.ville-vichy.fr/declaration-decoconception/",
+  "organisme": "Ville de Vichy",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "inovagora",
+  "score": 90,
+  "derniere_maj": "17/11/2025"
  }
 ]

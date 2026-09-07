@@ -6,7 +6,7 @@
   "justifications": "Non",
   "audit": "inovagora",
   "score": 100.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://www.marchesduvelayrochebaron.fr/declaration-decoconception/",
@@ -15,7 +15,7 @@
   "justifications": "Non",
   "audit": "inovagora",
   "score": 100.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://www.forez-est.fr/declaration-decoconception/",
@@ -24,7 +24,7 @@
   "justifications": "Non",
   "audit": "inovagora",
   "score": 100.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://www.dinan-agglomeration.fr/declaration-decoconception/",
@@ -33,7 +33,7 @@
   "justifications": "Non",
   "audit": "inovagora",
   "score": 100.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://www.eaucoeurdessonne.fr/declaration-decoconception/",
@@ -42,7 +42,7 @@
   "justifications": "Non",
   "audit": "inovagora",
   "score": 100.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://www.lannion-tregor.com/declaration-decoconception/",
@@ -51,7 +51,7 @@
   "justifications": "Non",
   "audit": "inovagora",
   "score": 100.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://www.parcduverdon.fr/declaration-decoconception/",
@@ -60,7 +60,7 @@
   "justifications": "Non",
   "audit": "inovagora",
   "score": 100.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://www.cc-salagou.fr/declaration-decoconception/",
@@ -69,7 +69,7 @@
   "justifications": "Oui",
   "audit": "inovagora",
   "score": 100.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://www.plouhinec.com/declaration-decoconception/",
@@ -78,7 +78,7 @@
   "justifications": "Non",
   "audit": "inovagora",
   "score": 100.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://www.stcyraumontdor.fr/declaration-decoconception/",
@@ -87,7 +87,7 @@
   "justifications": "Non",
   "audit": "inovagora",
   "score": 100.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://www.lissieu.fr/declaration-decoconception/",
@@ -96,7 +96,7 @@
   "justifications": "Non",
   "audit": "inovagora",
   "score": 100.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://comnum.rennes.fr/declaration-decoconception/",
@@ -330,7 +330,7 @@
   "justifications": "Non",
   "audit": "Digital.green",
   "score": 89.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://arene.comparia.beta.gouv.fr/eco-design",
@@ -779,7 +779,7 @@
   "justifications": "Oui",
   "audit": "Greenspector",
   "score": 40.0,
-  "derniere_maj": "?"
+  "derniere_maj": null
  },
  {
   "url": "https://www.laudevsat.fr/declaration-environnementale/",
@@ -806,6 +806,33 @@
   "justifications": "Non",
   "audit": "Autoévaluation",
   "score": 61,
-  "derniere_maj": "?"
+  "derniere_maj": null
+ },
+ {
+  "url": "https://declarations-f52e8c.gitlab-pages.din.developpement-durable.gouv.fr/face/",
+  "organisme": "FACE (Ministère de l'Aménagement du Territoire et de la Transition Écologique",
+  "version": "V1 2024",
+  "justifications": "Oui",
+  "audit": "Autoévaluation",
+  "score": 48,
+  "derniere_maj": "30/01/2025"
+ },
+ {
+  "url": "https://declarations-f52e8c.gitlab-pages.din.developpement-durable.gouv.fr/trombinoscope/",
+  "organisme": "Trombinoscope (Ministère de l'Aménagement du Territoire et de la Transition Écologique",
+  "version": "V1 2024",
+  "justifications": "Oui",
+  "audit": "Autoévaluation",
+  "score": 74,
+  "derniere_maj": "10/04/2025"
+ },
+ {
+  "url": "https://www.cc-vallee-herault.fr/declaration-decoconception/",
+  "organisme": "Communauté de communes Vallée de l'Hérault",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "inovagora",
+  "score": 100,
+  "derniere_maj": null
  }
 ]

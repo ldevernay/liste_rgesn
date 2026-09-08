@@ -69,8 +69,9 @@
         case "maj-asc":
           return (parseFrDate(a.derniere_maj) || 0) - (parseFrDate(b.derniere_maj) || 0);
         case "score-desc":
-        default:
           return (b.score === null ? -1 : b.score) - (a.score === null ? -1 : a.score);
+        default:
+          return (a.score === null ? -1 : a.score) - (b.score === null ? -1 : b.score);
       }
     });
 

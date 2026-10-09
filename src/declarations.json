@@ -810,7 +810,7 @@
  },
  {
   "url": "https://declarations-f52e8c.gitlab-pages.din.developpement-durable.gouv.fr/face/",
-  "organisme": "FACE (Ministère de l'Aménagement du Territoire et de la Transition Écologique",
+  "organisme": "FACE (Ministère de l'Aménagement du Territoire et de la Transition Écologique)",
   "version": "V1 2024",
   "justifications": "Oui",
   "audit": "Autoévaluation",
@@ -819,7 +819,7 @@
  },
  {
   "url": "https://declarations-f52e8c.gitlab-pages.din.developpement-durable.gouv.fr/trombinoscope/",
-  "organisme": "Trombinoscope (Ministère de l'Aménagement du Territoire et de la Transition Écologique",
+  "organisme": "Trombinoscope (Ministère de l'Aménagement du Territoire et de la Transition Écologique)",
   "version": "V1 2024",
   "justifications": "Oui",
   "audit": "Autoévaluation",
@@ -1305,11 +1305,29 @@
  },
  {
   "url": "https://sovrium.com/fr/docs/rgesn-parity",
-  "organisme": "Sovrium est un moteur d'application configurable et souverain.",
+  "organisme": "Sovrium",
   "version": "V1 2024",
   "justifications": "Oui",
   "audit": "Autoévaluation",
   "score": null,
   "derniere_maj": "13/08/2026"
+ },
+ {
+  "url": "https://plasticapp.io/ecoconception",
+  "organisme": "PlasticApp",
+  "version": "V1 2024",
+  "justifications": "Oui",
+  "audit": "Autoévaluation",
+  "score": 69.5,
+  "derniere_maj": "25/09/2026"
+ },
+ {
+  "url": "https://www.akiani.fr/ecoconception/",
+  "organisme": "Akiani",
+  "version": "V1 2024",
+  "justifications": "Oui",
+  "audit": "Autoévaluation",
+  "score": 30,
+  "derniere_maj": "27/05/2026"
  }
 ]

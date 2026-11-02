@@ -1329,5 +1329,14 @@
   "audit": "Autoévaluation",
   "score": 77,
   "derniere_maj": "09/10/2026"
+ },
+ {
+  "url": "https://www.e-labo.biz/declaration-ecoconception/",
+  "organisme": "e-labo",
+  "version": "V1 2024",
+  "justifications": "Oui",
+  "audit": "Autoévaluation",
+  "score": 75,
+  "derniere_maj": "14/10/2026"
  }
 ]

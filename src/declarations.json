@@ -1338,5 +1338,23 @@
   "audit": "Autoévaluation",
   "score": 75,
   "derniere_maj": "14/10/2026"
+ },
+ {
+  "url": "https://roannaise-de-leau.fr/declaration-rgesn/",
+  "organisme": "Roannaise de l'eau - Syndicat du cycle de l'eau",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Digital.green",
+  "score": 75,
+  "derniere_maj": "30/09/2026"
+ },
+ {
+  "url": "https://www.ville-orange.fr/systeme/declaration-ecoconception/",
+  "organisme": "Ville d'Orange",
+  "version": "V1 2024",
+  "justifications": "Non",
+  "audit": "Créasit",
+  "score": 90,
+  "derniere_maj": "22/10/2026"
  }
 ]
